@@ -1,0 +1,17 @@
+{
+    "portfolio": [
+      {
+        "cover" : "/portfolio/1/one.png",
+        "title" : "React Portfolio",
+        "description" : "React - JSX - SCSS",
+        "url" : "https://trentonfunt.github.io/my-portfolio/"
+      },
+
+      {
+        "cover" : "/portfolio/2/two.png",
+        "title" : "Edu Bridge",
+        "description" : "React - JSX - SCSS",
+        "url" : ""
+      }
+    ]
+}

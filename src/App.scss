@@ -1,0 +1,68 @@
+$primary-color: #ffd700;
+
+@import 'animate.css' ;
+@import '../node_modules/loaders.css/src/animations/pacman.scss';
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/Helvetica-neu.ttf') format('tff');
+}
+
+@font-face {
+  font-family: 'La Belle Aurore';
+  src: url('./assets/fonts/LaBelleAurore.woff2 ') format('woff2');
+}
+
+/**
+ * The '@font-face' class is used to define custom fonts that can be used throughout the website.
+ * It allows the developer to specify the font family and the source of the font file.
+ */
+@font-face {
+  /**
+   * The name of the font family that is being defined.
+   */
+  font-family: 'Coolvetica';
+
+  /**
+   * The location of the font file and the format of the file.
+   * In this case, the font file is located in the './assets/fonts' directory
+   * and the format of the file is woff2.
+   */
+  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+}
+
+
+
+
+
+/**
+ * The 'input' class is used to define the font family for input and textarea elements on a website.
+ * It sets the font family to 'Helvetica Neue', which is a popular sans-serif font that is easy to read on screens.
+ * This class ensures consistency in the font style across the website, making it easier for users to read and interact with the content.
+ */
+input,
+textarea {
+  font-family: 'Helvetica Neue';
+}
+
+.loader-active {
+  /*
+  * The '.loader-active' class is used to display a loader animation on a website.
+  * It positions the loader in the center of the screen and sets its dimensions to 50px by 50px.
+  * It also applies the 'fadeOut' animation from the 'animate.css' library to the loader,
+  * which causes it to fade out after 1 second with a delay of 0.6 seconds.
+  * The 'animation-fill-mode' property is set to 'forwards', which ensures that the loader remains in its final state after the animation is complete.
+  */
+
+  display: block; /* Display the loader */
+  position: absolute; /* Position the loader */
+  left: 0;
+  right: 0;
+  margin: auto; /* Center the loader */
+  top: 0;
+  bottom: 0;
+  width: 50px; /* Set the dimensions of the loader */
+  height: 50px;
+  animation: fadeOut 1s 0.6s; /* Apply the 'fadeOut' animation */
+  animation-fill-mode: forwards; /* Ensure the loader remains in its final state after the animation */
+}

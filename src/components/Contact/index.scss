@@ -1,0 +1,131 @@
+.contact-form {
+  width: 100%;
+  margin-top: 20px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style:none;
+      margin-bottom: 10px;
+      overflow: hidden;
+      display: block;
+      position: relative;
+      opacity:0 ;
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode: forwards;
+      clear: both;
+    }
+
+    li.half {
+      width: 49%;
+      margin-left: 2%;
+      float: left;
+      clear: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  input[type='text'],
+  input[type='email'] {
+    width: 100%;
+    border: 0;
+    background: #04354f;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+    border: 0;
+    background:#04354f;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    min-height: 150px;
+    box-sizing: border-box;
+  }
+
+  .flat-button {
+    color:#0c915c ;
+    background: 0 0;
+    font: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px ;
+    border: 1px solid #c5b80a;
+    float: right;
+    border-radius: 6px;
+  }
+}
+
+.info-map {
+  position: absolute;
+  background-color: #000;
+  top: 40px;
+  right: 30%;
+  z-index: 999999;
+  width: 270px;
+  padding: 18px;
+  font-family: 'Helvetica';
+  font-size: 17px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeIn 1s 1.5s;
+  animation-fill-mode: forwards;
+
+  span {
+    font-size: 16px;
+    display: block;
+    padding-top: 20px;
+    color: #0c915c;
+
+  }
+}
+
+.map-wrap {
+  background: rgba(10,245,218,0.1);
+  float: right;
+  width: 53%;
+  height: 90%;
+
+}
+
+.leaflet-container {
+  width: 80%;
+  height: 90%;
+  position: absolute;
+  opacity: 0;
+  animation: backInRight 1s 1.2s;
+  animation-fill-mode: forwards;
+
+}
+
+@media screen and (max-width: 1200px) {
+  .map-wrap {
+    float: none;
+    width: 100%;
+    height: 400px;
+    margin: 0;
+  }
+
+  .info-map {
+    display: none;
+  }
+
+  .leaflet-container {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+  }
+}
