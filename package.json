@@ -1,8 +1,8 @@
 {
-  "homepage": "http://trentonfunt.github.io/my-portfolio",
+  "homepage": "https://trentonfunt.github.io/my-portfolio",
   "name": "my-portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
